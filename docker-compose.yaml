@@ -1,0 +1,65 @@
+version: '3'
+services:
+  webapp1:
+    build:
+      context: ./webapp
+    networks:
+      - proxy-demo
+    ports:
+      - 8091:8080
+    volumes:
+      - ./env/webapp1:/app/logs
+      - ./webapp/:/usr/src/app/
+    command:
+      # Start Uvicorn Server
+      - "uvicorn"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "8080"
+      - "--workers"
+      - "1"
+      - "--log-config"
+      - "logger.conf.yaml"
+      - "app1:app"
+  webapp2:
+    build:
+      context: ./webapp
+    networks:
+      - proxy-demo
+    ports:
+      - 8092:8080
+    volumes:
+      - ./env/webapp2:/app/logs
+      - ./webapp/:/usr/src/app/
+    command:
+      # Start Uvicorn Server
+      - "uvicorn"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "8080"
+      - "--workers"
+      - "1"
+      - "--log-config"
+      - "logger.conf.yaml"
+      - "app2:app"
+  envoy:
+    image: docker.io/envoyproxy/envoy:v1.31.5
+    volumes: ./envoy/config.yaml:/envoy/config.yaml
+    privileged: true
+    networks:
+      - proxy-demo
+    ports:
+      # admin UI
+      - 7001:8001
+      # HTTP proxy
+      - 28080:28080
+      # TCP proxy
+      - 23333:23333
+    command:
+      - "-c"
+      - "/envoy/config.yaml"
+
+networks:
+  proxy-demo:

@@ -1,0 +1,44 @@
+{"timestamp":"2025-02-26T08:07:13","log_level":"INFO","name":"uvicorn.error","message":"Started server process [1]"}
+{"timestamp":"2025-02-26T08:07:13","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application startup."}
+{"timestamp":"2025-02-26T08:07:13","log_level":"INFO","name":"uvicorn.error","message":"Application startup complete."}
+{"timestamp":"2025-02-26T08:07:13","log_level":"INFO","name":"uvicorn.error","message":"Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}
+{"timestamp":"2025-02-26T08:07:31","log_level":"INFO","name":"uvicorn.error","message":"Shutting down"}
+{"timestamp":"2025-02-26T08:07:31","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application shutdown."}
+{"timestamp":"2025-02-26T08:07:31","log_level":"INFO","name":"uvicorn.error","message":"Application shutdown complete."}
+{"timestamp":"2025-02-26T08:07:31","log_level":"INFO","name":"uvicorn.error","message":"Finished server process [1]"}
+{"timestamp":"2025-02-26T08:07:35","log_level":"INFO","name":"uvicorn.error","message":"Started server process [1]"}
+{"timestamp":"2025-02-26T08:07:35","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application startup."}
+{"timestamp":"2025-02-26T08:07:35","log_level":"INFO","name":"uvicorn.error","message":"Application startup complete."}
+{"timestamp":"2025-02-26T08:07:35","log_level":"INFO","name":"uvicorn.error","message":"Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}
+{"timestamp":"2025-02-26T08:08:08","log_level":"INFO","name":"uvicorn.error","message":"Shutting down"}
+{"timestamp":"2025-02-26T08:08:08","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application shutdown."}
+{"timestamp":"2025-02-26T08:08:08","log_level":"INFO","name":"uvicorn.error","message":"Application shutdown complete."}
+{"timestamp":"2025-02-26T08:08:08","log_level":"INFO","name":"uvicorn.error","message":"Finished server process [1]"}
+{"timestamp":"2025-02-26T08:08:10","log_level":"INFO","name":"uvicorn.error","message":"Started server process [1]"}
+{"timestamp":"2025-02-26T08:08:10","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application startup."}
+{"timestamp":"2025-02-26T08:08:10","log_level":"INFO","name":"uvicorn.error","message":"Application startup complete."}
+{"timestamp":"2025-02-26T08:08:10","log_level":"INFO","name":"uvicorn.error","message":"Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}
+{"timestamp":"2025-02-26T08:08:15","log_level":"INFO","name":"uvicorn.error","message":"Shutting down"}
+{"timestamp":"2025-02-26T08:08:15","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application shutdown."}
+{"timestamp":"2025-02-26T08:08:15","log_level":"INFO","name":"uvicorn.error","message":"Application shutdown complete."}
+{"timestamp":"2025-02-26T08:08:15","log_level":"INFO","name":"uvicorn.error","message":"Finished server process [1]"}
+{"timestamp":"2025-02-26T08:08:57","log_level":"INFO","name":"uvicorn.error","message":"Started server process [1]"}
+{"timestamp":"2025-02-26T08:08:57","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application startup."}
+{"timestamp":"2025-02-26T08:08:57","log_level":"INFO","name":"uvicorn.error","message":"Application startup complete."}
+{"timestamp":"2025-02-26T08:08:57","log_level":"INFO","name":"uvicorn.error","message":"Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}
+{"timestamp":"2025-02-26T08:17:17","log_level":"INFO","name":"uvicorn.error","message":"Shutting down"}
+{"timestamp":"2025-02-26T08:17:17","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application shutdown."}
+{"timestamp":"2025-02-26T08:17:17","log_level":"INFO","name":"uvicorn.error","message":"Application shutdown complete."}
+{"timestamp":"2025-02-26T08:17:17","log_level":"INFO","name":"uvicorn.error","message":"Finished server process [1]"}
+{"timestamp":"2025-02-26T08:17:22","log_level":"INFO","name":"uvicorn.error","message":"Started server process [1]"}
+{"timestamp":"2025-02-26T08:17:22","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application startup."}
+{"timestamp":"2025-02-26T08:17:22","log_level":"INFO","name":"uvicorn.error","message":"Application startup complete."}
+{"timestamp":"2025-02-26T08:17:22","log_level":"INFO","name":"uvicorn.error","message":"Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}
+{"timestamp":"2025-02-26T08:17:45","log_level":"INFO","name":"uvicorn.error","message":"Shutting down"}
+{"timestamp":"2025-02-26T08:17:45","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application shutdown."}
+{"timestamp":"2025-02-26T08:17:45","log_level":"INFO","name":"uvicorn.error","message":"Application shutdown complete."}
+{"timestamp":"2025-02-26T08:17:45","log_level":"INFO","name":"uvicorn.error","message":"Finished server process [1]"}
+{"timestamp":"2025-02-26T08:17:52","log_level":"INFO","name":"uvicorn.error","message":"Started server process [1]"}
+{"timestamp":"2025-02-26T08:17:52","log_level":"INFO","name":"uvicorn.error","message":"Waiting for application startup."}
+{"timestamp":"2025-02-26T08:17:52","log_level":"INFO","name":"uvicorn.error","message":"Application startup complete."}
+{"timestamp":"2025-02-26T08:17:52","log_level":"INFO","name":"uvicorn.error","message":"Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)"}

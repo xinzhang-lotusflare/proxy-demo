@@ -1,0 +1,30 @@
+version: 1
+formatters:
+  default:
+    (): 'uvicorn.logging.DefaultFormatter'
+    format: '{"timestamp":"%(asctime)s","log_level":"%(levelname)s","name":"%(name)s","message":"%(message)s"}'
+    datefmt: "%Y-%m-%dT%H:%M:%S"
+  access:
+    (): 'uvicorn.logging.AccessFormatter'
+    format: '%(asctime)s %(client_addr)s %(request_line)s %(status_code)s'
+    datefmt: "%Y-%m-%dT%H:%M:%S"
+handlers:
+  error:
+    formatter: default
+    class: logging.FileHandler
+    filename: /app/logs/server.log
+  access:
+    formatter: access
+    class: logging.FileHandler
+    filename: /app/logs/access.log
+loggers:
+  uvicorn.error:
+    level: INFO
+    handlers:
+      - error
+    propagate: no
+  uvicorn.access:
+    level: INFO
+    handlers:
+      - access
+    propagate: no
