@@ -1,0 +1,15 @@
+http:
+  routers:
+    webapp-router:
+      rule: "PathPrefix(`/`)"
+      service: svc-webapp
+      entryPoints:
+        - svc
+      observability:
+        accessLogs: true
+  services:
+    svc-webapp:
+      loadBalancer:
+        servers:
+          - url: "http://webapp1:8080"
+          - url: "http://webapp2:8080"

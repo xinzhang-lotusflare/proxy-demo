@@ -60,6 +60,24 @@ services:
     command:
       - "-c"
       - "/envoy/config.yaml"
-
+  traefik:
+    image: docker.io/library/traefik:v3.3.4
+    volumes:
+    - ./traefik/static.yaml:/traefik/static.yaml
+    - ./traefik/webapp.yaml:/traefik/dynamic/webapp.yaml
+    networks:
+      - proxy-demo
+    ports:
+      # admin UI
+      - 7002:8080
+      # metrics
+      - 8081:8081
+      # HTTP proxy
+      - 21080:21080
+      # TCP proxy
+      - 21313:21313
+    command:
+      - "--configfile"
+      - "/traefik/static.yaml"
 networks:
   proxy-demo:
