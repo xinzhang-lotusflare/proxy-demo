@@ -79,5 +79,16 @@ services:
     command:
       - "--configfile"
       - "/traefik/static.yaml"
+  nginx:
+    image: docker.io/bitnami/nginx:1.27.3
+    volumes:
+      - ./nginx/full.conf:/opt/bitnami/nginx/conf/nginx.conf:ro
+      - ./nginx/index.json:/var/nginx/static/json/index.json:ro
+    networks:
+      - proxy-demo
+    ports:
+      - 16553:16553 # http
+      - 26553:26553 # tcp
+
 networks:
   proxy-demo:

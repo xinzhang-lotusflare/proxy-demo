@@ -4,7 +4,7 @@ http:
       rule: "PathPrefix(`/`)"
       service: svc-webapp
       entryPoints:
-        - svc
+        - http
       observability:
         accessLogs: true
   services:
@@ -13,3 +13,18 @@ http:
         servers:
           - url: "http://webapp1:8080"
           - url: "http://webapp2:8080"
+
+tcp:
+  routers:
+    tcp-webapp:
+      # By default, routers listen to every EntryPoints.
+      rule: "HostSNI(`*`)"
+      service: tcp-webapp
+      entryPoints:
+        - tcp
+  services:
+    tcp-webapp:
+      loadBalancer:
+        servers:
+        - address: "webapp1:8080" # webapp1
+        - address: "webapp2:8080" # webapp2
