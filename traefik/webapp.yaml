@@ -10,6 +10,10 @@ http:
   services:
     svc-webapp:
       loadBalancer:
+        healthCheck:
+          path: /
+          interval: 5s
+          timeout: 1s
         servers:
           - url: "http://webapp1:8080"
           - url: "http://webapp2:8080"
