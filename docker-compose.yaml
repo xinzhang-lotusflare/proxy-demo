@@ -89,6 +89,15 @@ services:
     ports:
       - 16553:16553 # http
       - 26553:26553 # tcp
+  haproxy:
+    image: haproxy:3.0.8-bookworm
+    volumes:
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    networks:
+      - proxy-demo
+    ports:
+      - 16998:16998 # http
+      - 26998:26998 # tcp
 
 networks:
   proxy-demo:
