@@ -97,6 +97,7 @@ services:
       - proxy-demo
     ports:
       - 16998:16998 # http
+      - 19091:19091 # metrics
       - 26998:26998 # tcp
 
 networks:
