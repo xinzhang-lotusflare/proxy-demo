@@ -99,6 +99,25 @@ services:
       - 16998:16998 # http
       - 19091:19091 # metrics
       - 26998:26998 # tcp
+  loxilb:
+    image: ghcr.io/loxilb-io/loxilb:v0.9.8.3
+    privileged: true
+    user: root
+    volumes:
+      - ./env/loxilb/log/:/var/log
+    networks:
+      - proxy-demo
+    ports:
+      - 11111:11111 # api
+      - 13656:13656 # tcp
+      # - 17260:17260 # http
+    command:
+      - "--prometheus" # http://localhost:11111/netlox/v1/metrics
+
+# loxicmd get endpoint -o wide
+# loxicmd get lb -o wide
+# loxicmd delete lb 0.0.0.0 --tcp 13656
+# loxicmd create lb 0.0.0.0  --select=rr --mode=hostonearm --tcp 13656:8080 --endpoints=10.89.0.26:1,10.89.0.27:1 --monitor
 
 networks:
   proxy-demo:
